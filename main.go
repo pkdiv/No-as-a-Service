@@ -21,16 +21,22 @@ type messages struct {
 
 func main() {
 
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+	addr := ":" + port
+
 	mux := http.NewServeMux()
 
 	mux.HandleFunc("/no/", handlerFunc)
 
 	server := &http.Server{
-		Addr:    ":8080",
+		Addr:    addr,
 		Handler: mux,
 	}
 
-	log.Println("Server running on http://localhost:8080")
+	log.Printf("Server running on http://localhost:%s\n", port)
 	log.Fatal(server.ListenAndServe())
 
 }
