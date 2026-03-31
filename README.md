@@ -2,7 +2,7 @@
 
 A simple API built in Go that provides various ways to say "No". Perfect for those times when you need to decline a request but want to do it with a specific flair—be it corporate, sarcastic, or over-dramatic.
 
-🚀 **Live Demo:** [naas.pkdiv.com](https://naas.pkdiv.com)  
+🚀 **Live Demo:** [naas.pkdiv.workers.dev](https://naas.pkdiv.workers.dev/)  
 🐳 **Docker Image:** [hub.docker.com/r/pkdiv/no-as-a-service](https://hub.docker.com/r/pkdiv/no-as-a-service)
 
 ## Getting Started
